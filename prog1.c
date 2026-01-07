@@ -4,16 +4,12 @@
 #include <time.h> 
 #include <stdlib.h>
 
-// TODO Other includes
-
 // Initialize an integer myrand as 0 to prevent whoopsies like undefined behavior
 int myrand = 0;
 
 int main() {
 	// The main function is the entrypoint of the program. When the program
 	// is executed, it will automatically start here.
-	
-	// TODO Complete the program
 
 	// Generate a seed that will help give a psuedorandom number
 	srand(time(NULL));
