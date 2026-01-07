@@ -4,8 +4,7 @@
 #include <time.h> 
 #include <stdlib.h>
 
-// Initialize an integer myrand as 0 to prevent whoopsies like undefined behavior
-int myrand = 0;
+
 
 int main() {
 	// The main function is the entrypoint of the program. When the program
@@ -14,8 +13,8 @@ int main() {
 	// Generate a seed that will help give a psuedorandom number
 	srand(time(NULL));
 
-	// Generate a random number between 0 and 10
-	myrand = (rand() % 11);
+	// Generate a random number between 0 and 10 and store it in myrand
+	int myrand = (rand() % 11);
 
 	// Begin print logic	
 	if(myrand <= 4) { // Accounts for myrand between 0 and 4
