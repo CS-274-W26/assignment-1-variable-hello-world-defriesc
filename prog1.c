@@ -23,8 +23,8 @@ int main() {
 		printf("FRODO LIVES\n");
 	} else if(myrand == 10) { // Accounts for when myrand is 10 
 		printf("Larn is the best roguelike\n");
-	} else { // Accounts for a failsafe case if the rand() doesn't work as intended
-		printf("How did you manage to do that? he random number generator didn't work!\n");
+	} else { // failsafe if the rand() doesn't work as intended
+		printf("The random number generator didn't work!\n");
 	}
 
 	// Tell the user what number was generated
